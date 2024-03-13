@@ -7,7 +7,7 @@ CREATE TABLE Usuario(
     nombre VARCHAR(100),
     apellido VARCHAR(100),
     correo VARCHAR(100),
-    contrasena ,
+    contrasena VARCHAR(50),
     num_tel INT,
     nacionalidad VARCHAR(100),
     fecha_nacimiento DATE

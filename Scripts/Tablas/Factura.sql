@@ -1,4 +1,4 @@
-USE Game_Store_DB
+USE Game_Store_DB;
 
 --Creacion de la tabla factura--
 CREATE TABLE factura(
@@ -6,4 +6,4 @@ CREATE TABLE factura(
     id_ord_compra INT,
     total DECIMAL(7,2),
     fecha_facturacion DATE
-)
+);
