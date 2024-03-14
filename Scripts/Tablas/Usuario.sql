@@ -8,7 +8,7 @@ CREATE TABLE Usuario(
     apellido VARCHAR(100) NOT NULL,
     correo VARCHAR(100) NOT NULL,
     contrasena VARCHAR(50) NOT NULL,
-    num_tel VARCHAR(100) NOT NULL,
+    num_tel VARCHAR(12) NOT NULL,
     pais VARCHAR(100) NOT NULL,
     fecha_nacimiento DATE NOT NULL
 );

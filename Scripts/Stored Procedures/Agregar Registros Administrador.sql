@@ -7,12 +7,12 @@ CREATE PROCEDURE sp_agregar_admin_usuario
 @correo VARCHAR(100),
 @contrasena VARCHAR(50),
 @num_tel VARCHAR(12),
-@nacionalidad VARCHAR(100),
+@pais VARCHAR(100),
 @fecha_nacimiento DATE
 AS
 BEGIN
-    INSERT INTO usuario(nombre, apellido, correo, contrasena, num_tel, nacionalidad, fecha_nacimiento)
-    VALUES(@nombre, @apellido, @correo, @contrasena, @num_tel, @nacionalidad, @fecha_nacimiento);
+    INSERT INTO usuario(nombre, apellido, correo, contrasena, num_tel, pais, fecha_nacimiento)
+    VALUES(@nombre, @apellido, @correo, @contrasena, @num_tel, @pais, @fecha_nacimiento);
 END;
 
 --Procedure para agregar registros con el rol de admin en la tabla videojuego.

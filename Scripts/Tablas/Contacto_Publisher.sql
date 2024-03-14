@@ -7,5 +7,5 @@ CREATE TABLE contacto_publisher(
     nombre VARCHAR(100) NOT NULL,
     apellido VARCHAR(100) NOT NULL,
     correo VARCHAR(100) NOT NULL,
-    num_tel VARCHAR(100) NOT NULL
+    num_tel VARCHAR(12) NOT NULL
 );
