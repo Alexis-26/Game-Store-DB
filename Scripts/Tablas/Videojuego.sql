@@ -9,6 +9,6 @@ CREATE TABLE videojuego (
     id_genero INT FOREIGN KEY REFERENCES genero(id_genero),
     id_clasificacion INT FOREIGN KEY REFERENCES clasificacion(id_clasificacion),
     fecha_lanzamiento DATE NOT NULL,
-    sinopsis VARCHAR(100) NOT NULL,
+    sinopsis VARCHAR(500) NOT NULL,
     stock INT NOT NULL
 );

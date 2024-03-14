@@ -114,7 +114,7 @@ AS
 BEGIN
     UPDATE clasificacion
     SET nombre = @nombre
-    WHERE id_clasificacion = @id_calificacion;
+    WHERE id_clasificacion = @id_clasificacion;
 END;
 
 --Procedure para modificar registros con el rol de admin en la tabla factura.

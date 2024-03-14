@@ -6,5 +6,4 @@ CREATE TABLE detalle_wishlist (
     id_wishlist INT FOREIGN KEY REFERENCES wishlist(id_wishlist),
     id_videojuego INT FOREIGN KEY REFERENCES videojuego(id_videojuego),
     fecha_agregado DATE NOT NULL,
-    PRIMARY KEY(id_wishlist, id_videojuego)
 );
