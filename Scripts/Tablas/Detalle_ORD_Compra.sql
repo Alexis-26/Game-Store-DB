@@ -6,6 +6,5 @@ CREATE TABLE detalle_ord_compra (
     id_ord_compra INT FOREIGN KEY REFERENCES ord_compra(id_ord_compra),
     id_videojuego INT FOREIGN KEY REFERENCES videojuego(id_videojuego),
     precio_unitario DECIMAL(7,2) NOT NULL,
-    cantidad INT NOT NULL,
-    PRIMARY KEY(id_ord_compra, id_videojuego)
+    cantidad INT NOT NULL
 );

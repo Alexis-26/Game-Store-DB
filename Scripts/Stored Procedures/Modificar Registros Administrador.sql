@@ -2,7 +2,7 @@ USE Game_Store_DB;
 
 --Procedure para modificar registros con el rol de admin en la tabla usuario.
 CREATE PROCEDURE sp_modificar_admin_usuario
-@id_usuario INT NOT NULL,
+@id_usuario INT,
 @nombre VARCHAR(100),
 @apellido VARCHAR(100),
 @correo VARCHAR(100),
@@ -25,7 +25,7 @@ END;
 
 --Procedure para modificar registros con el rol de admin en la tabla videojuego.
 CREATE PROCEDURE sp_modificar_admin_videojuego
-@id_videojuego INT NOT NULL,
+@id_videojuego INT,
 @nombre VARCHAR(100),
 @precio DECIMAL(7,2),
 @id_publisher INT,
@@ -50,7 +50,7 @@ END;
 
 --Procedure para modificar registros con el rol de admin en la tabla publisher.
 CREATE PROCEDURE sp_modificar_admin_publisher
-@id_publisher INT NOT NULL,
+@id_publisher INT,
 @nombre VARCHAR(100)
 AS
 BEGIN
@@ -61,7 +61,7 @@ END;
 
 --Procedure para modificar registros con el rol de admin en la tabla contacto_publisher.
 CREATE PROCEDURE sp_modificar_admin_contacto_publisher
-@id_contacto INT NOT NULL,
+@id_contacto INT,
 @id_publisher INT,
 @nombre VARCHAR(100),
 @apellido VARCHAR(100),
@@ -80,7 +80,7 @@ END;
 
 --Procedure para modificar registros con el rol de admin en la tabla calificacion.
 CREATE PROCEDURE sp_modificar_admin_calificacion
-@id_calificacion INT NOT NULL,
+@id_calificacion INT,
 @id_usuario INT,
 @id_videojuego INT,
 @puntuacion INT,
@@ -97,7 +97,7 @@ END;
 
 --Procedure para modificar registros con el rol de admin en la tabla genero.
 CREATE PROCEDURE sp_modificar_admin_genero
-@id_genero INT NOT NULL,
+@id_genero INT,
 @nombre VARCHAR(100)
 AS
 BEGIN
@@ -108,7 +108,7 @@ END;
 
 --Procedure para modificar registros con el rol de admin en la tabla clasificacion.
 CREATE PROCEDURE sp_modificar_admin_clasificacion
-@id_clasificacion INT NOT NULL,
+@id_clasificacion INT,
 @nombre VARCHAR(100)
 AS
 BEGIN
@@ -119,7 +119,7 @@ END;
 
 --Procedure para modificar registros con el rol de admin en la tabla factura.
 CREATE PROCEDURE sp_modificar_admin_factura
-@id_factura INT NOT NULL,
+@id_factura INT,
 @id_ord_compra INT,
 @total DECIMAL(7,2),
 @fecha_facturacion DATE
@@ -134,7 +134,7 @@ END;
 
 --Procedure para modificar registros con el rol de admin en la tabla ord_compra.
 CREATE PROCEDURE sp_modificar_admin_ord_compra
-@id_ord_compra INT NOT NULL,
+@id_ord_compra INT,
 @id_usuario INT,
 @fecha_ord DATE
 AS
@@ -147,7 +147,7 @@ END;
 
 --Procedure para modificar registros con el rol de admin en la tabla detalle_ord_compra.
 CREATE PROCEDURE sp_modificar_admin_detalle_ord_compra
-@id_detalle INT NOT NULL,
+@id_detalle INT,
 @id_ord_compra INT,
 @id_videojuego INT,
 @precio_unitario DECIMAL(7,2),
@@ -164,7 +164,7 @@ END;
 
 --Procedure para modificar registros con el rol de admin en la tabla detalle_wishlist.
 CREATE PROCEDURE sp_modificar_admin_detalle_wishlist
-@id_detalle INT NOT NULL,
+@id_detalle INT,
 @id_wishlist INT,
 @id_videojuego INT,
 @fecha_agregado DATE
@@ -179,7 +179,7 @@ END;
 
 --Procedure para modificar registros con el rol de admin en la tabla wishlist.
 CREATE PROCEDURE sp_modificar_admin_wishlist
-@id_wishlist INT NOT NULL,
+@id_wishlist INT,
 @id_usuario INT
 AS
 BEGIN
