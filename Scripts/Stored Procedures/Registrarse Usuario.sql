@@ -1,4 +1,4 @@
-USE Game_Store_DB;
+USE Game_Store;
 
 --Procedure para registrarse (agregar) con el rol de usuario.
 CREATE PROCEDURE registrarse

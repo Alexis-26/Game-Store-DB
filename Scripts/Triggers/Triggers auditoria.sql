@@ -1,4 +1,4 @@
-USE Game_Store_DB;
+USE Game_Store;
 
 --Triggers de auditoria usuario
 --Trigger de insertar

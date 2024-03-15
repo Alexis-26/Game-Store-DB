@@ -1,4 +1,4 @@
-USE Game_Store_DB;
+USE Game_Store;
 
 --Procedure para guardar un juego en la wishlist (agregar) con el rol de usuario.
 CREATE PROCEDURE agregar_wishlist

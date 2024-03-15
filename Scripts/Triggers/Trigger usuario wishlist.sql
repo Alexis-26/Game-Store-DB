@@ -1,4 +1,4 @@
-USE Game_Store_BD;
+USE Game_Store;
 
 --Trigger wishlist
 CREATE TRIGGER TR_insert_usuario_wishlist

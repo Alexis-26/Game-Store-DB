@@ -1,4 +1,4 @@
-USE Game_Store_DB
+USE Game_Store;
 
 --Procedure para agregar registros con el rol de admin en la tabla usuario.
 CREATE PROCEDURE sp_agregar_admin_usuario

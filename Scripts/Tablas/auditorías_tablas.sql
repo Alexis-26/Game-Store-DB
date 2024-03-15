@@ -1,4 +1,4 @@
-USE Game_Store_DB;
+USE Game_Store;
 
 --Creación de la tabla para la auditoría de la tabla calificación.
 CREATE TABLE calificacion_aud (

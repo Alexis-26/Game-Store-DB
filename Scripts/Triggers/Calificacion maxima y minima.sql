@@ -1,3 +1,5 @@
+USE Game_Store;
+
 --Crear un trigger que valide si la calificacion es entre 1 a 5
 CREATE TRIGGER TR_calificacion
 ON calificacion

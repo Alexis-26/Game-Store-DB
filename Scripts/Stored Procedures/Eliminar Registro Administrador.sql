@@ -1,4 +1,4 @@
-USE Game_Store_DB;
+USE Game_Store;
 
 --Procedure para eliminar un registro de la tabla usuario.
 CREATE PROCEDURE sp_eliminar_admin_usuario

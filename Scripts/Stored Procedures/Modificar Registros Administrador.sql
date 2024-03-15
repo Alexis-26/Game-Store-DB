@@ -1,4 +1,4 @@
-USE Game_Store_DB;
+USE Game_Store;
 
 --Procedure para modificar registros con el rol de admin en la tabla usuario.
 CREATE PROCEDURE sp_modificar_admin_usuario

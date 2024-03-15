@@ -1,3 +1,5 @@
+USE Game_Store;
+
 --Triggers para evitar la eliminación de registros relacionados en tablas fuertes.
 CREATE TRIGGER TR_eliminacion_clasificacion
 ON clasificacion
